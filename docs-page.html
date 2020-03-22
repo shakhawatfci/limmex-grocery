@@ -10,7 +10,7 @@
     
     <meta name="description" content="Limmex Grocery is an online grocery system where you can start your business within no time">
     <meta name="author" content="Limmex Automation">    
-    <link rel="shortcut icon" href="favicon.ico"> 
+    <link rel="shortcut icon" href="logo.png""> 
     
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
@@ -31,6 +31,29 @@
     	.mt-20{
     		margin-top: 30px;
     	}
+
+    	figure {
+    /*border: thin #E3106E solid;*/
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    /*max-width: 220px;*/
+    margin: auto;
+}
+
+/*img {
+    max-width: 220px;
+    max-height: 150px;
+}*/
+
+figcaption {
+    background-color: #E3106E;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
     </style>
 
 </head> 
@@ -40,7 +63,7 @@
         <div class="branding docs-branding">
             <div class="container-fluid position-relative py-2">
                 <div class="docs-logo-wrapper">
-	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon mr-2" src="assets/images/coderdocs-logo.svg" alt="logo"><span class="logo-text">Limmex<span class="text-alt">Grocery</span></span></a></div>    
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon mr-2" src="./logo.png" alt="logo"><span class="logo-text">Limmex<span class="text-alt">Grocery</span></span></a></div>    
                 </div><!--//docs-logo-wrapper-->
 	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
 	
@@ -71,11 +94,15 @@
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder mr-2"><i class="fas fa-arrow-down"></i></span>Installation</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#upload">Download and Upload</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#datase_setting">Database Setting</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Section Item 2.3</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder mr-2"><i class="fas fa-box"></i></span>APIs</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Section Item 3.1</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Section Item 3.2</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Section Item 3.3</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#server-requirement">Server Requirement</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder mr-2"><i class="fas fa-box"></i></span>User Manual</a></li>
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#product">Product</a></li>				    
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#admin">Administration</a></li>
+
+				    <li class="nav-item"><a class="nav-link scrollto" href="#offers">Offers</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#general_setting">General Setting</a></li>
 				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder mr-2"><i class="fas fa-cogs"></i></span>Integrations</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Section Item 4.1</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Section Item 4.2</a></li>
@@ -110,7 +137,7 @@
 				    <header class="docs-header">
 					    <h1 class="docs-heading">Introduction</h1>
 					    <section class="docs-intro">
-						    <p>Limmex Grocery is a Laravel and Vue.js based online grocery shop which will provide you fastest start of your grocery business within no time.you can use it multipurposely for any kind of online shop.</p>
+						    <p>Limmex Grocery is a Laravel and Vue.js based online grocery shop which will provide you fastest start of your grocery business within no time.you can use it multipurposely for any kind of online shop.Fastest Searcing and filtering on frontend and also in admin panel will give u less time rendring ever ! </p>
 						</section><!--//docs-intro-->
 				    </header>
 				    <section class="docs-section" id="what_include">
@@ -187,44 +214,127 @@
 						    <p><strong>So you are scary about installation ? <img src="assets/images/sad.png"></strong> <br> <br>
                             Seat back and follow the instruction below your installion will done with ease. 
 						    </p>
+						    <a href=""><i class="fa fa-video"></i> &nbsp; Need video tutorial ?</a>
 						</section><!--//docs-intro-->
 				    </header>
 				     <section class="docs-section" id="upload">
 						<h2 class="section-heading">Download and upload</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<ul>
+						    <li>After Download your project from codecanyon u will get a zip file after  unzip the file you will get <strong class="mr-1">Software.zip</strong> folder and <strong>limmex_grocery.sql</strong> a SQL file of database.</li>
+						    <li>Login into your cpanel</li>
+						    <li>Go to your domain or subdomain root directory where you wants to upload the file</li>
+						    <li>Upload <strong class="mr-1">software.zip</strong> file on the directory</li>
+						    <li>After upload extract <strong>software.zip</strong> file then move the unzip file and folder to your desire directory</li>
+						    <li>Make sure hidden file are visiable on your hosting server</li>
+						</ul>
 					</section><!--//section-->
 					
 					<section class="docs-section" id="datase_setting">
 						<h2 class="section-heading">Database Setting</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<ul>
+						    <li>Go to MySql Database section on your cpanel</li>
+						    <li>Create a new database</li>
+						    <li>Add a new database user and remember the password (you can use any existing database user also)</li>
+						    <li>Go to Add User To Database section and Provide All PRIVILEGES user into your newly created database</li>
+						    <li>Now Go to phpmyadmin of cpanel and import <strong>limmex_grocery.sql</strong> from your downloaded folder into your newly created database </li>
+						    <li>Now Goto File Manager where you uploads all your software folder</li>
+						    <li>Right Click on .env file and go to edit provide your database name,database user name and password and save the file</li>
+						    <li>Now Go to your url .. cool you got the site running</li>
+						</ul>
 					</section><!--//section-->
 					
-					<section class="docs-section" id="item-2-3">
-						<h2 class="section-heading">Section Item 2.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					<section class="docs-section" id="server-requirement">
+						<h2 class="section-heading">Server Requirement</h2>
+						<h5>Make Sure your server meet this requirements</h5>
+                        <ul>
+                        	<li>PHP >= 7.2.0</li>
+                        	<li>BCMath PHP Extension</li>
+                        	<li>Ctype PHP Extension</li>
+                        	<li>JSON PHP Extension</li>
+                        	<li>Mbstring PHP Extension</li>
+                        	<li>OpenSSL PHP Extension</li>
+                        	<li>PDO PHP Extension</li>
+                        	<li>Tokenizer PHP Extension</li>
+                        	<li>XML PHP Extension</li>
+                        </ul>
+					   <h5>Still Confuse to install ? get help to install <a href="mailto:94shakha.18@gmail.com"> <i class="fa fa-envelope-square"></i> 94shakha.18@gmail.com</a></h5>
 					</section><!--//section-->
+
 			    </article><!--//docs-article-->
 			    
 			    
 			    <article class="docs-article" id="section-3">
 				    <header class="docs-header">
-					    <h1 class="docs-heading">APIs</h1>
+					    <h1 class="docs-heading">User Manual</h1>
 					    <section class="docs-intro">
-						    <p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit. Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+						    <p>Limmex Grocery is pretty easy to use if u have  any doubt you can follow below instruction</p>
 						</section><!--//docs-intro-->
 				    </header>
-				     <section class="docs-section" id="item-3-1">
-						<h2 class="section-heading">Section Item 3.1</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+
+		        <section class="docs-section" id="admin">
+						<h2 class="section-heading">Administration</h2>
+						<p>in administration parts there is three section role , permission and creating admin . First create Some Role and later give them proper menu permission which the role deserve. then using those role create admin as u want</p>
+
+						<figure>
+							<img src="./assets/images/screenshot/permission.PNG"
+							alt="Elephant at sunset" class="img-fluid">
+							<figcaption>Managing Role and Permission</figcaption>
+						</figure>						
+					</section><!--//section-->
+				     <section class="docs-section" id="product">
+						<h2 class="section-heading">Product</h2>
+
+						<h4>Category sub Category Brand</h4>
+						<p>Before Creating product you have to create category subcategory and brand. Every CRUD will be done without Loading The page.</p>
+
+						<figure>
+							<img src="./assets/images/screenshot/category.PNG"
+							alt="Elephant at sunset" class="img-fluid">
+							<figcaption>Category Module</figcaption>
+						</figure>						
+
+						<figure>
+							<img src="./assets/images/screenshot/brand.PNG"
+							alt="Elephant at sunset" class="img-fluid">
+							<figcaption>Brand Module</figcaption>
+						</figure>						
+
+						<figure>
+							<img src="./assets/images/screenshot/brand.PNG"
+							alt="Elephant at sunset" class="img-fluid">
+							<figcaption>Sub Category Module</figcaption>
+						</figure>
+						<br><br>
+
+						<h4>Product</h4>
+						<p>You will be amazed in this application admin panel products also maintains as smart as frontend.Nice and clean view of product,instant creating and  filtering product without page load.during creating product you will have exciting feture like tag and native name for easy searching</p>
+
+						<figure>
+							<img src="./assets/images/screenshot/product_view.PNG"
+							alt="Elephant at sunset" class="img-fluid">
+							<figcaption>Smartly Product Listing</figcaption>
+						</figure>						
+
+						<figure>
+							<img src="./assets/images/screenshot/product_create.PNG"
+							alt="Elephant at sunset" class="img-fluid">
+							<figcaption>Creating and Updating Product Instantly</figcaption>
+						</figure>							
 					</section><!--//section-->
 					
-					<section class="docs-section" id="item-3-2">
-						<h2 class="section-heading">Section Item 3.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+					<section class="docs-section" id="offers">
+						<h2 class="section-heading">Offers</h2>
+						<p>There Will Be lot of system to provide offers . intially in the first version  we are only using campaign system later we will add some other different way for providing discount and offer. for creating a campaign u just have to give campaign name and couple of image one for describe offer and another for SEO og image then add the product on the campaign give discount as u want in percentage or in amount that's it </p>
+
+						<figure>
+							<img src="./assets/images/screenshot/campaign.PNG"
+							alt="Elephant at sunset" class="img-fluid">
+							<figcaption>Managing Campaign</figcaption>
+						</figure>						
 					</section><!--//section-->
 					
-					<section class="docs-section" id="item-3-3">
-						<h2 class="section-heading">Section Item 3.3</h2>
+					<section class="docs-section" id="general_setting">
+						<h2 class="section-heading">General Setting</h2>
 						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
 					</section><!--//section-->
 			    </article><!--//docs-article-->
