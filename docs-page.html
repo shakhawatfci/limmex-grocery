@@ -1,585 +1,728 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
+
 <head>
-    <title>Limmerz CMS | Start Your Own Ecommerce Today !</title>
-    
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Limmerz is an ecommerce solution for both grocery and lifestyle based on laravel and vue.js."> 
-    <meta name="og:image" content="./assets/images/meta.png">
-    <meta name="og:title" content="Limmerz">
-    <meta name="og:description" content="Limmerz is an ecommerce solution for both grocery and lifestyle based on laravel and vue.js.">
-    <meta name="author" content="Limmex Automation">    
-    <meta name="keyword" content="Limmerz,Limmerz,Limmerz,Ecoomarce Script,Free Ecommerce script,grocery php vue script,online grocery shop,vue laravel,Limmerz,Limmex,Limmex Automation">    
-    <link rel="shortcut icon" href="logo.png""> 
+	<title>Limmerz Ecommerce and Grocery CMS | Start Your Own Ecommerce Today !</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Limmerz is an ecommerce solution for both grocery and lifestyle based on laravel and vue.js.">
+	<meta name="og:image" content="./assets/images/meta.png">
+	<meta name="og:title" content="Limmerz">
+	<meta name="og:description"
+		content="Limmerz is an ecommerce solution for both grocery and lifestyle based on laravel and vue.js.">
+	<meta name="author" content="Limmex Automation">
+	<meta name="keyword"
+		content="Limmerz,Limmerz,Limmerz,Ecoomarce Script,Free Ecommerce script,grocery php vue script,online grocery shop,vue laravel,Limmerz,Limmex,Limmex Automation">
+	<link rel="shortcut icon" href="logo.png""> 
     
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome JS-->
-    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    <link href=" https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
 
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
-    <style type="text/css">
-    	.mt-10{
-    		margin-top: 10px;
-    	}    	
+	<!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
 
-    	.mt-20{
-    		margin-top: 30px;
-    	}
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+	<style type="text/css">
+		.mt-10 {
+			margin-top: 10px;
+		}
 
-    	figure {
-    /*border: thin #E3106E solid;*/
-    display: flex;
-    flex-flow: column;
-    padding: 5px;
-    /*max-width: 220px;*/
-    margin: auto;
-}
+		.mt-20 {
+			margin-top: 30px;
+		}
 
-/*img {
+		figure {
+			/*border: thin #E3106E solid;*/
+			display: flex;
+			flex-flow: column;
+			padding: 5px;
+			/*max-width: 220px;*/
+			margin: auto;
+		}
+
+		/*img {
     max-width: 220px;
     max-height: 150px;
 }*/
 
-figcaption {
-    background-color: #E3106E;
-    color: #fff;
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: center;
-}
+		figcaption {
+			background-color: #E3106E;
+			color: #fff;
+			font: italic smaller sans-serif;
+			padding: 3px;
+			text-align: center;
+		}
+	</style>
 
-    </style>
+</head>
 
-</head> 
+<body class="docs-page">
+	<header class="header fixed-top">
+		<div class="branding docs-branding">
+			<div class="container-fluid position-relative py-2">
+				<div class="docs-logo-wrapper">
+					<div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon mr-2"
+								src="./assets/images/logo.png" alt="logo"></a></div>
+				</div>
+				<!--//docs-logo-wrapper-->
+				<div class="docs-top-utilities d-flex justify-content-end align-items-center">
 
-<body class="docs-page">    
-    <header class="header fixed-top">	    
-        <div class="branding docs-branding">
-            <div class="container-fluid position-relative py-2">
-                <div class="docs-logo-wrapper">
-	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon mr-2" src="./assets/images/logo.png" alt="logo"></a></div>    
-                </div><!--//docs-logo-wrapper-->
-	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
-	
 					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
-						<li class="list-inline-item"><a href="mailto:94shakha.18@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
-			            <li class="list-inline-item"><a href="https://www.facebook.com/Limmex-Automation-103549974482357/"><i class="fab fa-facebook fa-fw"></i></a></li>
-		                <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-		                <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
-		            </ul><!--//social-list-->
-		            <a href="https://codecanyon.net/item/limmerz-laravel-and-vue-online-grocery-shop/27477133" target="_blank" class="btn btn-primary d-none d-lg-flex"><i class="fa fa-leaf"></i> &nbsp; Buy Now</a>
-	            </div><!--//docs-top-utilities-->
-            </div><!--//container-->
-        </div><!--//branding-->
-    </header><!--//header-->
-    
-    <div class="docs-wrapper">
-	    <div id="docs-sidebar" class="docs-sidebar">
-		    <div class="top-search-box d-lg-none p-3">
-                <form class="search-form">
-		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
-		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-		        </form>
-            </div>
-		    <nav id="docs-nav" class="docs-nav navbar">
-			    <ul class="section-items list-unstyled nav flex-column pb-3">
-				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder mr-2"><i class="fas fa-map-signs"></i></span>Introduction</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#what_include">What's Special</a></li>
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder mr-2"><i class="fas fa-arrow-down"></i></span>Installation</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#upload">Download and Upload</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#datase_setting">Database Setting</a></li>
+						<li class="list-inline-item"><a href="mailto:94shakha.18@gmail.com"><i
+									class="fas fa-envelope-square"></i></a></li>
+						<li class="list-inline-item"><a
+								href="https://www.facebook.com/Limmex-Automation-103549974482357/"><i
+									class="fab fa-facebook fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+					</ul>
+					<!--//social-list-->
+					<a href="https://codecanyon.net/item/limmerz-laravel-and-vue-online-grocery-shop/27477133"
+						target="_blank" class="btn btn-primary d-none d-lg-flex"><i class="fa fa-leaf"></i> &nbsp; Buy
+						Now</a>
+				</div>
+				<!--//docs-top-utilities-->
+			</div>
+			<!--//container-->
+		</div>
+		<!--//branding-->
+	</header>
+	<!--//header-->
 
-				    <li class="nav-item"><a class="nav-link scrollto" href="#server-requirement">Server Requirement</a></li>		
+	<div class="docs-wrapper">
+		<div id="docs-sidebar" class="docs-sidebar">
+			<div class="top-search-box d-lg-none p-3">
+				<form class="search-form">
+					<input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+					<button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+			<nav id="docs-nav" class="docs-nav navbar">
+				<ul class="section-items list-unstyled nav flex-column pb-3">
+					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span
+								class="theme-icon-holder mr-2"><i class="fas fa-map-signs"></i></span>Introduction</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#what_include">What's Special</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span
+								class="theme-icon-holder mr-2"><i class="fas fa-arrow-down"></i></span>Installation</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#upload">Download and Upload</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#datase_setting">Database Setting</a></li>
 
-				    <li class="nav-item"><a class="nav-link scrollto" href="#admin-panel">Admin Panel Initial Credential</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#server-requirement">Server Requirement</a>
+					</li>
 
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder mr-2"><i class="fas fa-box"></i></span>User Manual</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#admin-panel">Admin Panel Initial
+							Credential</a></li>
 
-				    <li class="nav-item"><a class="nav-link scrollto" href="#product">Product</a></li>				    
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span
+								class="theme-icon-holder mr-2"><i class="fas fa-box"></i></span>User Manual</a></li>
 
-				    <li class="nav-item"><a class="nav-link scrollto" href="#admin">Administration</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#product">Product</a></li>
 
-				    <li class="nav-item"><a class="nav-link scrollto" href="#offers">Offers</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#admin">Administration</a></li>
 
-				    <li class="nav-item"><a class="nav-link scrollto" href="#orders">Order Management</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#offers">Offers</a></li>
 
-				    <li class="nav-item"><a class="nav-link scrollto" href="#customer_management">Customer Management</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#emailing_user">Emailing User</a></li>				    
-				    <li class="nav-item"><a class="nav-link scrollto" href="#report">Report</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#orders">Order Management</a></li>
 
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder mr-2"><i class="fas fa-cogs"></i></span>General Settings</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#customer_management">Customer
+							Management</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#emailing_user">Emailing User</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#report">Report</a></li>
 
-				    <li class="nav-item"><a class="nav-link scrollto" href="#currency">Currency Setting</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#payment_gateway_setting">Payment Gateway Setting</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#social_login_setting">Social Login Setting</a></li>				 
-				    <li class="nav-item"><a class="nav-link scrollto" href="#shop_setting">Shop Setting</a></li>				    
-				    <li class="nav-item"><a class="nav-link scrollto" href="#page_setting">Page Setting</a></li>				    
-				    <li class="nav-item"><a class="nav-link scrollto" href="#seo_setting">Seo Setting</a></li>				    
-				    <li class="nav-item"><a class="nav-link scrollto" href="#messanger_setting">Messanger & Google Analytics</a></li>
-				    <li class="nav-item"><a class="nav-link scrollto" href="#email_setting">Email Setting</a></li>				   
-				    <li class="nav-item"><a class="nav-link scrollto" href="#shipping_cost_setting">Shipping Cost Setting</a></li>	
-				    <li class="nav-item"><a class="nav-link scrollto" href="#shipping_area_setting">Shipping Area Setting</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span
+								class="theme-icon-holder mr-2"><i class="fas fa-cogs"></i></span>General Settings</a>
+					</li>
 
-				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder mr-2"><i class="fas fa-tools"></i></span>Technology Used</a></li>
-			    </ul>
+					<li class="nav-item"><a class="nav-link scrollto" href="#currency">Currency Setting</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#payment_gateway_setting">Payment Gateway
+							Setting</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#social_login_setting">Social Login
+							Setting</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#shop_setting">Shop Setting</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#page_setting">Page Setting</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#seo_setting">Seo Setting</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#messanger_setting">Messanger & Google
+							Analytics</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#email_setting">Email Setting</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#shipping_cost_setting">Shipping Cost
+							Setting</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#shipping_area_setting">Shipping Area
+							Setting</a></li>
 
-		    </nav><!--//docs-nav-->
-	    </div><!--//docs-sidebar-->
-	    <div class="docs-content">
-		    <div class="container">
-<!-- 		    	<div class="row justify-content-center">
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span
+								class="theme-icon-holder mr-2"><i class="fas fa-tools"></i></span>Technology Used</a>
+					</li>
+				</ul>
+
+			</nav>
+			<!--//docs-nav-->
+		</div>
+		<!--//docs-sidebar-->
+		<div class="docs-content">
+			<div class="container">
+				<!-- 		    	<div class="row justify-content-center">
 		    		<div class="col-md-12 text-center">
 
 		    		</div>
 		    	</div> -->
-			    <article class="docs-article" id="section-1">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Introduction</h1>
-					    <section class="docs-intro">
-						    <p>Limmerz is a Laravel and Vue.js based online grocery shop which will provide you fastest start of your grocery business within no time.you can use it multipurposely for any kind of online shop.Fastest Searcing and filtering on frontend and also in admin panel will give u less time rendring ever ! </p>
-						</section><!--//docs-intro-->
+				<article class="docs-article" id="section-1">
+					<header class="docs-header">
+						<h1 class="docs-heading">Introduction</h1>
+						<section class="docs-intro">
+							<p>Limmerz is a Laravel and Vue.js based online grocery shop which will provide you fastest
+								start of your grocery business within no time.you can use it multipurposely for any kind
+								of online shop.Fastest Searcing and filtering on frontend and also in admin panel will
+								give u less time rendring ever ! </p>
+						</section>
+						<!--//docs-intro-->
 						<div class="alert alert-success">
-		    				<h4><span class="badge badge-primary">New</span> Materialize front end</h4>
+							<h4><span class="badge badge-primary">New</span> Dynamic Order Scheduling</h4>
 
-		    				<h4><span class="badge badge-primary">New</span> Slider Added</h4>
-		    			</div>
-				    </header>
-				    <section class="docs-section" id="what_include">
+							<h4><span class="badge badge-primary">New</span> User Coupon System</h4>
+						</div>
+					</header>
+					<section class="docs-section" id="what_include">
 						<h2 class="section-heading">What's Special <i class="fa fa-question-circle"></i></h2>
-	                  <div class="row text-center">
-	                  	<div class="col-md-4 mt-20">
-	                  		<img class="img-responsive rounded-circle" src="assets/images/features/vue_laravel.jpg" alt="Limmerz Technologies">
-	                  		<h5 class="mt-10">Made <i class="fa fa-heart text-danger"></i> With Vue and Laravel</h5>
-	                  	</div>		                  	
+						<div class="row text-center">
+							<div class="col-md-4 mt-20">
+								<img class="img-responsive rounded-circle" src="assets/images/features/vue_laravel.jpg"
+									alt="Limmerz Technologies">
+								<h5 class="mt-10">Made <i class="fa fa-heart text-danger"></i> With Vue and Laravel</h5>
+							</div>
 
-	                  	<div class="col-md-4 mt-20">
-	                  		<img src="assets/images/features/responsive_design.png" alt="Limmerz Responsive">
-	                  		<h5 class="mt-10">Super Responsive</h5>
-	                  	</div>	                  	
+							<div class="col-md-4 mt-20">
+								<img src="assets/images/features/responsive_design.png" alt="Limmerz Responsive">
+								<h5 class="mt-10">Super Responsive</h5>
+							</div>
 
-	                  	<div class="col-md-4 mt-20">
-	                  		<img src="assets/images/features/rocket.png" alt="Limmex Fastest Speed">
-	                  		<h5 class="mt-10">Fastest Rendering</h5>
-	                  	</div>	                  	
+							<div class="col-md-4 mt-20">
+								<img src="assets/images/features/rocket.png" alt="Limmex Fastest Speed">
+								<h5 class="mt-10">Fastest Rendering</h5>
+							</div>
 
-	                  	<div class="col-md-4 mt-20 text-center">
-	                  		<img src="assets/images/features/seo.png" alt="Limmerz SEO">
-	                  		<h5 class="mt-10 text-center">SEO Friendly</h5>
-	                  	</div>	                  	
+							<div class="col-md-4 mt-20 text-center">
+								<img src="assets/images/features/seo.png" alt="Limmerz SEO">
+								<h5 class="mt-10 text-center">SEO Friendly</h5>
+							</div>
 
-	                  	<div class="col-md-4 mt-20 text-center">
-	                  		<img src="assets/images/features/online-payment.png" alt="Limmerz SEO">
-	                  		<h5 class="mt-10 text-center">Multiple Payment Gateway</h5>
-	                  	</div>	                  	
+							<div class="col-md-4 mt-20 text-center">
+								<img src="assets/images/features/online-payment.png" alt="Limmerz Payment Gateway">
+								<h5 class="mt-10 text-center">Multiple Payment Gateway</h5>
+							</div>
 
-	                  	<div class="col-md-4 mt-20 text-center">
-	                  		<img src="assets/images/features/coin.png" alt="Limmerz SEO">
-	                  		<h5 class="mt-10 text-center">Easy Currency Switching</h5>
-	                  	</div>	                  	
+							<div class="col-md-4 mt-20 text-center">
+								<img src="assets/images/features/coin.png" alt="Limmerz Multi Currency">
+								<h5 class="mt-10 text-center">Easy Currency Switching</h5>
+							</div>
 
-	                  	<div class="col-md-4 mt-20 text-center">
-	                  		<img src="assets/images/features/login.png" alt="Limmerz SEO">
-	                  		<h5 class="mt-10 text-center">Social Media Login</h5>
-	                  	</div>	                  	
+							<div class="col-md-4 mt-20 text-center">
+								<img src="assets/images/features/login.png" alt="Limmerz Social Login">
+								<h5 class="mt-10 text-center">Social Media Login</h5>
+							</div>
 
-	                  	<div class="col-md-4 mt-20 text-center">
-	                  		<img src="assets/images/features/user.png" alt="Limmerz SEO">
-	                  		<h5 class="mt-10 text-center">User Friendly</h5>
-	                  	</div>	                  	
+							<div class="col-md-4 mt-20 text-center">
+								<img src="assets/images/features/user.png" alt="Limmerz User Friendly">
+								<h5 class="mt-10 text-center">User Friendly</h5>
+							</div>
 
-	                  	<div class="col-md-4 mt-20 text-center">
-	                  		<img src="assets/images/features/code.png" alt="Limmerz SEO">
-	                  		<h5 class="mt-10 text-center">Open Source</h5>
-	                  	</div>	                  	
+							<div class="col-md-4 mt-20 text-center">
+								<img src="assets/images/features/code.png" alt="Limmerz Opensource">
+								<h5 class="mt-10 text-center">Open Source</h5>
+							</div>
 
-	                  	<div class="col-md-4 mt-20 text-center">
-	                  		<img src="assets/images/features/dashboard.png" alt="Limmerz SEO">
-	                  		<h5 class="mt-10 text-center">Smart Admin Panel</h5>
-	                  	</div>	                  	
+							<div class="col-md-4 mt-20 text-center">
+								<img src="assets/images/features/dashboard.png" alt="Limmerz Smart Admin">
+								<h5 class="mt-10 text-center">Smart Admin Panel</h5>
+							</div>
 
-	                  	<div class="col-md-4 mt-20 text-center">
-	                  		<img src="assets/images/features/filter.png" alt="Limmerz SEO">
-	                  		<h5 class="mt-10 text-center">Quick Filtering</h5>
-	                  	</div>	                  	
+							<div class="col-md-4 mt-20 text-center">
+								<img src="assets/images/features/filter.png" alt="Limmerz Quick Filtering">
+								<h5 class="mt-10 text-center">Quick Filtering</h5>
+							</div>
 
-	                  	<div class="col-md-4 mt-20 text-center">
-	                  		<img src="assets/images/features/offers.png" alt="Limmerz SEO">
-	                  		<h5 class="mt-10 text-center">Most Advance Search System</h5>
-	                  	</div>
-	                  </div>
-					</section><!--//section-->
-					
-			    </article>
-			    
-			    <article class="docs-article" id="section-2">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Installation</h1>
-					    <section class="docs-intro">
-						    <p><strong>So you are scary about installation ? <img src="assets/images/sad.png"></strong> <br> <br>
-                            Seat back and follow the instruction below your installion will done with ease. 
-						    </p>
-						    <a target="_blank" href="https://youtu.be/3t6TrF3Uxkg" title="Video Tutorial"><i class="fa fa-video"></i> &nbsp; Need video tutorial ?</a>
-						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="upload">
+							<div class="col-md-4 mt-20 text-center">
+								<img src="assets/images/features/offers.png" alt="Limmerz Search Sytem">
+								<h5 class="mt-10 text-center">Most Advance Search System</h5>
+							</div>
+
+							<div class="col-md-4 mt-20 text-center">
+								<img src="assets/images/features/schedule.png" alt="Limmerz Dynamic Order Scheduling">
+								<h5 class="mt-10 text-center">Dynamic Order Scheduling</h5>
+							</div>
+
+							<div class="col-md-4 mt-20 text-center">
+								<img src="assets/images/features/coupon.png" alt="Limmerz Coupon System">
+								<h5 class="mt-10 text-center">Coupon Discount System</h5>
+							</div>
+
+						</div>
+					</section>
+					<!--//section-->
+
+				</article>
+
+				<article class="docs-article" id="section-2">
+					<header class="docs-header">
+						<h1 class="docs-heading">Installation</h1>
+						<section class="docs-intro">
+							<p><strong>So you are scary about installation ? <img src="assets/images/sad.png"></strong>
+								<br> <br>
+								Seat back and follow the instruction below your installion will done with ease.
+							</p>
+							<a target="_blank" href="https://youtu.be/3t6TrF3Uxkg" title="Video Tutorial"><i
+									class="fa fa-video"></i> &nbsp; Need video tutorial ?</a>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="upload">
 						<h2 class="section-heading">Download and upload</h2>
 						<ul>
-						    <li>After Download your project from codecanyon u will get a zip file after  unzip the file you will get <strong class="mr-1">Software.zip</strong> folder and <strong>Limmerz.sql</strong> a SQL file of database.</li>
-						    <li>Login into your cpanel</li>
-						    <li>Go to your domain or subdomain root directory where you wants to upload the file</li>
-						    <li>Upload <strong class="mr-1">software.zip</strong> file on the directory</li>
-						    <li>After upload extract <strong>software.zip</strong> file then move the unzip file and folder to your desire directory</li>
-						    <li>Make sure hidden file are visiable on your hosting server</li>
+							<li>After Download your project from codecanyon u will get a zip file after unzip the file
+								you will get <strong class="mr-1">Software.zip</strong> folder and
+								<strong>Limmerz.sql</strong> a SQL file of database.</li>
+							<li>Login into your cpanel</li>
+							<li>Go to your domain or subdomain root directory where you wants to upload the file</li>
+							<li>Upload <strong class="mr-1">software.zip</strong> file on the directory</li>
+							<li>After upload extract <strong>software.zip</strong> file then move the unzip file and
+								folder to your desire directory</li>
+							<li>Make sure hidden file are visiable on your hosting server</li>
 						</ul>
-					</section><!--//section-->
-					
+					</section>
+					<!--//section-->
+
 					<section class="docs-section" id="datase_setting">
 						<h2 class="section-heading">Database Setting</h2>
 						<ul>
-						    <li>Go to MySql Database section on your cpanel</li>
-						    <li>Create a new database</li>
-						    <li>Add a new database user and remember the password (you can use any existing database user also)</li>
-						    <li>Go to Add User To Database section and Provide All PRIVILEGES user into your newly created database</li>
-						    <li>Now Go to phpmyadmin of cpanel and import <strong>Limmerz.sql</strong> from your downloaded folder into your newly created database </li>
-						    <li>Now Goto File Manager where you uploads all your software folder</li>
-						    <li>Right Click on .env file and go to edit provide your database name,database user name and password and save the file</li>
-						    <li>Now Go to your url .. cool you got the site running</li>
+							<li>Go to MySql Database section on your cpanel</li>
+							<li>Create a new database</li>
+							<li>Add a new database user and remember the password (you can use any existing database
+								user also)</li>
+							<li>Go to Add User To Database section and Provide All PRIVILEGES user into your newly
+								created database</li>
+							<li>Now Go to phpmyadmin of cpanel and import <strong>Limmerz.sql</strong> from your
+								downloaded folder into your newly created database </li>
+							<li>Now Goto File Manager where you uploads software folder</li>
+							<li>Right Click on .env file and go to edit provide your database name,database user name
+								and password and save the file</li>
+							<li>Now Go to your url .. cool you got the site running</li>
+							<li>Enter Purchase Code and you are got to go...</li>
 						</ul>
-					</section><!--//section-->
-					
+					</section>
+					<!--//section-->
+
 					<section class="docs-section" id="server-requirement">
 						<h2 class="section-heading">Server Requirement</h2>
 						<h5>Make Sure your server meet this requirements</h5>
-                        <ul>
-                        	<li>PHP >= 7.2.5</li>
-                        	<li>BCMath PHP Extension</li>
-                        	<li>Ctype PHP Extension</li>
-                        	<li>JSON PHP Extension</li>
-                        	<li>Mbstring PHP Extension</li>
-                        	<li>OpenSSL PHP Extension</li>
-                        	<li>PDO PHP Extension</li>
-                        	<li>Tokenizer PHP Extension</li>
-                        	<li>XML PHP Extension</li>
-                        </ul>
-					   <h5>Still Confuse to install ? get help to install <a href="mailto:94shakha.18@gmail.com"> <i class="fa fa-envelope-square"></i> 94shakha.18@gmail.com</a></h5>
-					</section><!--//section-->					
+						<ul>
+							<li>PHP >= 7.3</li>
+							<li>BCMath PHP Extension</li>
+							<li>Ctype PHP Extension</li>
+							<li>JSON PHP Extension</li>
+							<li>Mbstring PHP Extension</li>
+							<li>OpenSSL PHP Extension</li>
+							<li>PDO PHP Extension</li>
+							<li>Tokenizer PHP Extension</li>
+							<li>XML PHP Extension</li>
+						</ul>
+						<h5>Still Confuse to install ? get help to install <a href="mailto:94shakha.18@gmail.com"> <i
+									class="fa fa-envelope-square"></i> 94shakha.18@gmail.com</a></h5>
+					</section>
+					<!--//section-->
 
 					<section class="docs-section" id="admin-panel">
 						<h2 class="section-heading">Admin Panel and Initial Credential</h2>
-						<h5>After installation Visit <a href="">http://yoursite.com/admin</a>  you will find a admin login page login into it by  below information</h5>
-                        <ul>
-                        	<li>Email : admin@limmerz.com</li>
-                        	<li>Pasword : 123456</li>
+						<h5>After installation Visit <a href="">http://yoursite.com/admin</a> you will find a admin
+							login page login into it by below information</h5>
+						<ul>
+							<li>Email : admin@limmerz.com</li>
+							<li>Pasword : 123456</li>
 
-                        </ul>
-					   <h5>Then You can change password or create new admin as u wants></h5>
-					</section><!--//section-->
+						</ul>
+						<h5>Then You can change password or create new admin as u wants></h5>
+					</section>
+					<!--//section-->
 
-			    </article><!--//docs-article-->
-			    
-			    
-			    <article class="docs-article" id="section-3">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">User Manual</h1>
-					    <section class="docs-intro">
-						    <p>Limmerz is pretty easy to use if u have  any doubt you can follow below instruction</p>
-						</section><!--//docs-intro-->
-				    </header>
+				</article>
+				<!--//docs-article-->
 
-		        <section class="docs-section" id="admin">
+
+				<article class="docs-article" id="section-3">
+					<header class="docs-header">
+						<h1 class="docs-heading">User Manual</h1>
+						<section class="docs-intro">
+							<p>Limmerz is pretty easy to use if u have any doubt you can follow below instruction</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+
+					<section class="docs-section" id="admin">
 						<h2 class="section-heading">Administration</h2>
-						<p>in administration parts there is three section role , permission and creating admin . First create Some Role and later give them proper menu permission which the role deserve. then using those role create admin as u want</p>
+						<p>in administration parts there is three section role , permission and creating admin . First
+							create Some Role and later give them proper menu permission which the role deserve. then
+							using those role create admin as u want</p>
 
 						<figure>
-							<img src="./assets/images/screenshot/permission.PNG"
-							alt="Limmex Automation" class="img-fluid">
+							<img src="./assets/images/screenshot/permission.PNG" alt="Limmex Automation"
+								class="img-fluid">
 							<figcaption>Managing Role and Permission</figcaption>
-						</figure>						
-					</section><!--//section-->
-				     <section class="docs-section" id="product">
+						</figure>
+					</section>
+					<!--//section-->
+					<section class="docs-section" id="product">
 						<h2 class="section-heading">Product</h2>
 
 						<h4>Category sub Category Brand</h4>
-						<p>Before Creating product you have to create category subcategory and brand. Every CRUD will be done without Loading The page.</p>
+						<p>Before Creating product you have to create category subcategory and brand. Every CRUD will be
+							done without Loading The page.</p>
 
 						<figure>
-							<img src="./assets/images/screenshot/category.PNG"
-							alt="Limmex Automation" class="img-fluid">
+							<img src="./assets/images/screenshot/category.PNG" alt="Limmex Automation"
+								class="img-fluid">
 							<figcaption>Category Module</figcaption>
-						</figure>						
+						</figure>
 
 						<figure>
-							<img src="./assets/images/screenshot/brand.PNG"
-							alt="Limmex Automation" class="img-fluid">
+							<img src="./assets/images/screenshot/brand.PNG" alt="Limmex Automation" class="img-fluid">
 							<figcaption>Brand Module</figcaption>
-						</figure>						
+						</figure>
 
 						<figure>
-							<img src="./assets/images/screenshot/brand.PNG"
-							alt="Limmex Automation" class="img-fluid">
+							<img src="./assets/images/screenshot/brand.PNG" alt="Limmex Automation" class="img-fluid">
 							<figcaption>Sub Category Module</figcaption>
 						</figure>
 						<br><br>
 
 						<h4>Product</h4>
-						<p>You will be amazed in this application admin panel products also maintains as smart as frontend.Nice and clean view of product,instant creating and  filtering product without page load.during creating product you will have exciting feture like tag and native name for easy searching</p>
+						<p>You will be amazed in this application admin panel products also maintains as smart as
+							frontend.Nice and clean view of product,instant creating and filtering product without page
+							load.during creating product you will have exciting feture like tag and native name for easy
+							searching</p>
 
 						<figure>
-							<img src="./assets/images/screenshot/product_view.PNG"
-							alt="Limmerz Smartly Product Listing" class="img-fluid">
+							<img src="./assets/images/screenshot/product_view.PNG" alt="Limmerz Smartly Product Listing"
+								class="img-fluid">
 							<figcaption>Smartly Product Listing</figcaption>
-						</figure>						
+						</figure>
 
 						<figure>
 							<img src="./assets/images/screenshot/product_create.PNG"
-							alt="Limmerz Creating and Updating Product Instantly" class="img-fluid">
+								alt="Limmerz Creating and Updating Product Instantly" class="img-fluid">
 							<figcaption>Creating and Updating Product Instantly</figcaption>
-						</figure>							
-					</section><!--//section-->
-					
+						</figure>
+					</section>
+					<!--//section-->
+
 					<section class="docs-section" id="offers">
 						<h2 class="section-heading">Offers</h2>
-						<p>There Will Be lot of system to provide offers . intially in the first version  we are only using campaign system later we will add some other different way for providing discount and offer. for creating a campaign u just have to give campaign name and couple of image one for describe offer and another for SEO og image then add the product on the campaign give discount as u want in percentage or in amount that's it </p>
+						<p>There Will Be lot of system to provide offers . intially in the first version we are only
+							using campaign system later we will add some other different way for providing discount and
+							offer. for creating a campaign u just have to give campaign name and couple of image one for
+							describe offer and another for SEO og image then add the product on the campaign give
+							discount as u want in percentage or in amount that's it </p>
 
 						<figure>
-							<img src="./assets/images/screenshot/campaign.PNG"
-							alt="Limmex Automaton Managing Campaign" class="img-fluid">
+							<img src="./assets/images/screenshot/campaign.PNG" alt="Limmex Automaton Managing Campaign"
+								class="img-fluid">
 							<figcaption>Managing Campaign</figcaption>
-						</figure>						
-					</section><!--//section-->					
+						</figure>
+					</section>
+					<!--//section-->
 
 					<section class="docs-section" id="orders">
 						<h2 class="section-heading">Order Management</h2>
-						<p>Limmerz have most dynamic order management system you can do with your order whole process without loading the page isn't it cool ? ya that's not end there will be area wise admin who will find just his areas order this will make order proccessing faster then typical one.</p>
+						<p>Limmerz have most dynamic order management system you can do with your order whole process
+							without loading the page isn't it cool ? ya that's not end there will be area wise admin who
+							will find just his areas order this will make order proccessing faster then typical one.</p>
 
 						<figure>
-							<img src="./assets/images/screenshot/order.PNG"
-							alt="Limmerz Order Management" class="img-fluid">
-							<figcaption>Managing Order  (Area Wise admin will manage there area's order)</figcaption>
-						</figure>						
-					</section><!--//section-->
-					
+							<img src="./assets/images/screenshot/order.PNG" alt="Limmerz Order Management"
+								class="img-fluid">
+							<figcaption>Managing Order (Area Wise admin will manage there area's order)</figcaption>
+						</figure>
+					</section>
+					<!--//section-->
+
 					<section class="docs-section" id="customer_management">
 						<h2 class="section-heading">Customer Management</h2>
-						<p>You Can Manage and see your customer update on this section how much money he expend on the site how many item and order he buy and customer order listing etc will be there.</p>
-					</section><!--//section-->					
+						<p>You Can Manage and see your customer update on this section how much money he expend on the
+							site how many item and order he buy and customer order listing etc will be there.</p>
+					</section>
+					<!--//section-->
 
 					<section class="docs-section" id="emailing_user">
 						<h2 class="section-heading">Emailing User </h2>
-						<p>In this section you can send mail to your customer by chosing one by one or whole customer base . and you can also send mail to your newsletter subscriber too.</p>
-										<figure>
-							<img src="./assets/images/screenshot/customer_emailing.PNG"
-							alt="Limmerz Order Management" class="img-fluid">
+						<p>In this section you can send mail to your customer by chosing one by one or whole customer
+							base . and you can also send mail to your newsletter subscriber too.</p>
+						<figure>
+							<img src="./assets/images/screenshot/customer_emailing.PNG" alt="Limmerz Order Management"
+								class="img-fluid">
 							<figcaption>Emailing Customer and Subscriber</figcaption>
-						</figure>	
-					</section><!--//section-->					
+						</figure>
+					</section>
+					<!--//section-->
 
 					<section class="docs-section" id="report">
 						<h2 class="section-heading">Report</h2>
-						<p>There is different types of report there in the apss such as sales report ,stock report , invoice report, payment report etc
-						. if you u see report you will have an idea about your business in everyday</p>	
-					</section><!--//section-->
-			    </article><!--//docs-article-->
-			    
-			    <article class="docs-article" id="section-4">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">General Setting</h1>
-					    <section class="docs-intro">
-						    <p>In order to get full perform apps you have to do some setting like payment gateway , social media login setting , email setting,facebook chat and google analytics setting etc.</p>
-						</section><!--//docs-intro-->
-				    </header>
-				     <section class="docs-section" id="currency">
+						<p>There is different types of report there in the apss such as sales report ,stock report ,
+							invoice report, payment report etc
+							. if you u see report you will have an idea about your business in everyday</p>
+					</section>
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
+
+				<article class="docs-article" id="section-4">
+					<header class="docs-header">
+						<h1 class="docs-heading">General Setting</h1>
+						<section class="docs-intro">
+							<p>In order to get full perform apps you have to do some setting like payment gateway ,
+								social media login setting , email setting,facebook chat and google analytics setting
+								etc.</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="currency">
 						<h2 class="section-heading">Currency Setting</h2>
-						<p>We tried to includes every currency from all over the world if any currency missing you can add edit or delete them. you can set your currency just by click on set as current currency in admin panels currency settings</p>
-					</section><!--//section-->
-					
+						<p>We tried to includes every currency from all over the world if any currency missing you can
+							add edit or delete them. you can set your currency just by click on set as current currency
+							in admin panels currency settings</p>
+					</section>
+					<!--//section-->
+
 					<section class="docs-section" id="payment_gateway_setting">
 						<h2 class="section-heading">Payment Gateway Setting</h2>
-						<p>We Intially Includes Four (COD,Stripe,Paypal,SSL-Commerz) payment gateway in this cms system you can active deactive payment gateway as your wish . for getting payment in your wallet you have to find app_id or client id and client secret from your respective payment gateway provider.then just put it into payment setting section  of admin panel </p>
+						<p>We Intially Includes Four (COD,Stripe,Paypal,SSL-Commerz) payment gateway in this cms system
+							you can active deactive payment gateway as your wish . for getting payment in your wallet
+							you have to find app_id or client id and client secret from your respective payment gateway
+							provider.then just put it into payment setting section of admin panel </p>
 
 						<figure>
-							<img src="./assets/images/screenshot/payment_setting.PNG"
-							alt="Limmerz Order Management" class="img-fluid">
+							<img src="./assets/images/screenshot/payment_setting.PNG" alt="Limmerz Order Management"
+								class="img-fluid">
 							<figcaption>Provide correct credential for payment gateway</figcaption>
-						</figure>	
+						</figure>
 
-					</section>				
+					</section>
 
 
 					<section class="docs-section" id="social_login_setting">
 						<h2 class="section-heading">Social Login Setting</h2>
-						<p>Login With social Media Setting also as like payment setting we put three social media Login system initially twitter facebook and google , just grab client id or app id , and app secret from respective provider (you may need redirect ur to put in your provider api)  put it into our admin panel. You can also control which login system you want and which not by activate and deactivate them. activated method will go into login register page of the site</p>	
- 						<figure>
-							<img src="./assets/images/screenshot/social_setting.PNG"
-							alt="Limmerz Social Media Setting" class="img-fluid">
-							<figcaption>Click on edit button and update application with your app_id and secret</figcaption>
-						</figure>	
+						<p>Login With social Media Setting also as like payment setting we put three social media Login
+							system initially twitter facebook and google , just grab client id or app id , and app
+							secret from respective provider (you may need redirect ur to put in your provider api) put
+							it into our admin panel. You can also control which login system you want and which not by
+							activate and deactivate them. activated method will go into login register page of the site
+						</p>
+						<figure>
+							<img src="./assets/images/screenshot/social_setting.PNG" alt="Limmerz Social Media Setting"
+								class="img-fluid">
+							<figcaption>Click on edit button and update application with your app_id and secret
+							</figcaption>
+						</figure>
 
-					</section><!--//section-->
-					
+					</section>
+					<!--//section-->
+
 					<section class="docs-section" id="shop_setting">
 						<h2 class="section-heading">Shop Setting</h2>
-						<p>Shop Setting is most important and needed part in back end . you have to put shop information there it will be shared in whole application.during logo upload try to upload image the  size we mentioned there.You can also control of your theme color from shop setting remember chose a color which will be fit with white text</p>
- 						<figure>
-							<img src="./assets/images/screenshot/shop_setting.PNG"
-							alt="Limmerz Social Media Setting" class="img-fluid">
+						<p>Shop Setting is most important and needed part in back end . you have to put shop information
+							there it will be shared in whole application.during logo upload try to upload image the size
+							we mentioned there.You can also control of your theme color from shop setting remember chose
+							a color which will be fit with white text</p>
+						<figure>
+							<img src="./assets/images/screenshot/shop_setting.PNG" alt="Limmerz Social Media Setting"
+								class="img-fluid">
 							<figcaption>Shop Setting</figcaption>
-						</figure>						
-					</section>					
+						</figure>
+					</section>
 
 					<section class="docs-section" id="page_setting">
 						<h2 class="section-heading">Page Setting</h2>
-						<p>Every ecommarce site need some page  as like privacy policy,return policy etc. you can generate this type of page dynamically from backend this will show in footer in front end.</p>						
-					</section>					
+						<p>Every ecommarce site need some page as like privacy policy,return policy etc. you can
+							generate this type of page dynamically from backend this will show in footer in front end.
+						</p>
+					</section>
 
 					<section class="docs-section" id="seo_setting">
 						<h2 class="section-heading">SEO Setting</h2>
-						<p>Yaps Limmerz build on Vue.js but it support SEO meta tag cool ? in order to get default seo meta tag  you to set your seo keyword description meta image in seo setting</p>
- 						<figure>
-							<img src="./assets/images/screenshot/seo_setting.PNG"
-							alt="Limmerz Social Media Setting" class="img-fluid">
+						<p>Yaps Limmerz build on Vue.js but it support SEO meta tag cool ? in order to get default seo
+							meta tag you to set your seo keyword description meta image in seo setting</p>
+						<figure>
+							<img src="./assets/images/screenshot/seo_setting.PNG" alt="Limmerz Social Media Setting"
+								class="img-fluid">
 							<figcaption>Provide Meta data As You wants</figcaption>
-						</figure>												
-					</section>					
+						</figure>
+					</section>
 
 					<section class="docs-section" id="messanger_setting">
 						<h2 class="section-heading">Messanger & Google Analytics</h2>
-						<p>Limmerz provide you facebook chat with customer option via your facebook page . you just have to make your website url whitelisted in your facebook page then grab the id put it in admin panel that's it . if u don't want you can disable it too by clicking on off button. and you can also use google analytics to keep update page activity </p>
- 						<figure>
+						<p>Limmerz provide you facebook chat with customer option via your facebook page . you just have
+							to make your website url whitelisted in your facebook page then grab the id put it in admin
+							panel that's it . if u don't want you can disable it too by clicking on off button. and you
+							can also use google analytics to keep update page activity </p>
+						<figure>
 							<img src="./assets/images/screenshot/messanger_and_google.PNG"
-							alt="Limmerz Social Media Setting" class="img-fluid">
+								alt="Limmerz Social Media Setting" class="img-fluid">
 							<figcaption>Messanger and Google Analytics Setting</figcaption>
-						</figure>												
-					</section>					
+						</figure>
+					</section>
 
 					<section class="docs-section" id="email_setting">
 						<h2 class="section-heading">Email Setting</h2>
-						<p>You have to set your email data or credential in order ta get user emailing service. you will get proper instruction in our admin panel about this</p>
-					</section>					
+						<p>You have to set your email data or credential in order ta get user emailing service. you will
+							get proper instruction in our admin panel about this</p>
+					</section>
 
 					<section class="docs-section" id="shipping_cost_setting">
 						<h2 class="section-heading">Shipping Cost Setting</h2>
-						<p>You Can Control your shipping cost dynamically . it's also possible to give discount on shipping cost on certaing order amount. suppose you give a condition if user shop more then 100$ then he will get 1$ off in shipping cost.you can also make it free of shipping.</p>
-						 <figure>
-							<img src="./assets/images/screenshot/shipping_cost.PNG"
-							alt="Limmerz Social Media Setting" class="img-fluid">
+						<p>You Can Control your shipping cost dynamically . it's also possible to give discount on
+							shipping cost on certaing order amount. suppose you give a condition if user shop more then
+							100$ then he will get 1$ off in shipping cost.you can also make it free of shipping.</p>
+						<figure>
+							<img src="./assets/images/screenshot/shipping_cost.PNG" alt="Limmerz Social Media Setting"
+								class="img-fluid">
 							<figcaption>Shipping Cost Management</figcaption>
 						</figure>
 					</section>
 
 					<section class="docs-section" id="shipping_area_setting">
 						<h2 class="section-heading">Shipping / Order Area Setting</h2>
-						<p>This is important u have to setup shipping area for customer where he belongs to he will chose the area. and in the backend admin who registered on this area he will get just those areas order and he can manage them</p>
+						<p>This is important u have to setup shipping area for customer where he belongs to he will
+							chose the area. and in the backend admin who registered on this area he will get just those
+							areas order and he can manage them</p>
 					</section>
 
-			    </article><!--//docs-article-->
-			    
-			    <article class="docs-article" id="section-5">
-				    <header class="docs-header">
-					    <h1 class="docs-heading">Technology Used for Build </h1>
-					    <section class="docs-intro">
-	                  <div class="row text-center">
-	                  	<div class="col-md-4 mt-20">
-	                  		<img class=" img-fluid rounded-circle" src="assets/images/tech/laravel.jpg" alt="Limmerz Technologies">
-	                  		<h5 class="mt-10">Laravel Version 7 + </h5>
-	                  	</div>	                  	
+				</article>
+				<!--//docs-article-->
 
-	                  	<div class="col-md-4 mt-20">
-	                  		<img class=" img-fluid rounded-circle" src="assets/images/tech/vue.png" alt="Limmerz Technologies">
-	                  		<h5 class="mt-10">Vue Js</h5>
-	                  	</div>	                  	
+				<article class="docs-article" id="section-5">
+					<header class="docs-header">
+						<h1 class="docs-heading">Technology Used for Build </h1>
+						<section class="docs-intro">
+							<div class="row text-center">
+								<div class="col-md-4 mt-20">
+									<img class=" img-fluid rounded-circle" src="assets/images/tech/laravel.jpg"
+										alt="Limmerz Technologies">
+									<h5 class="mt-10">Laravel Version 8 + </h5>
+								</div>
 
-	                  	<div class="col-md-4 mt-20">
-	                  		<img class=" img-fluid rounded-circle" src="assets/images/tech/mysql.png" alt="Limmerz Technologies">
-	                  		<h5 class="mt-10">MySql Database</h5>
-	                  	</div>		                  	
+								<div class="col-md-4 mt-20">
+									<img class=" img-fluid rounded-circle" src="assets/images/tech/vue.png"
+										alt="Limmerz Technologies">
+									<h5 class="mt-10">Vue Js</h5>
+								</div>
 
-	                  	<div class="col-md-4 mt-20">
-	                  		<img class=" img-fluid rounded-circle" src="assets/images/tech/bootstrap.png" alt="Limmerz Technologies">
-	                  		<h5 class="mt-10">Bootstrap Version-4</h5>
-	                  	</div>
+								<div class="col-md-4 mt-20">
+									<img class=" img-fluid rounded-circle" src="assets/images/tech/mysql.png"
+										alt="Limmerz Technologies">
+									<h5 class="mt-10">MySql Database</h5>
+								</div>
 
-
-	                  	<div class="col-md-4 mt-20">
-	                  		<img class=" img-fluid rounded-circle" src="assets/images/tech/jquery.png" alt="Limmerz Technologies">
-	                  		<h5 class="mt-10">Jquery </h5>
-	                  	</div>	                  	
-
-
-	                  	<div class="col-md-4 mt-20">
-	                  		<img class=" img-fluid rounded-circle" src="assets/images/tech/facebook.png" alt="Limmerz Technologies">
-	                  		<h5 class="mt-10">Facebook Api</h5>
-	                  	</div>	                  	
-
-	                  	<div class="col-md-4 mt-20">
-	                  		<img class=" img-fluid rounded-circle" src="assets/images/tech/google.png" alt="Limmerz Technologies">
-	                  		<h5 class="mt-10">Google Api</h5>
-	                  	</div>		                  	
-
-	                  	<div class="col-md-4 mt-20">
-	                  		<img class=" img-fluid rounded-circle" src="assets/images/tech/twitter.png" alt="Limmerz Technologies">
-	                  		<h5 class="mt-10">Twitter Api</h5>
-	                  	</div>	
-	                  	
-
-	                  	<div class="col-md-4 mt-20">
-	                  		<img class=" img-fluid rounded-circle" src="assets/images/tech/paypal.png" alt="Limmerz Technologies">
-	                  		<h5 class="mt-10">Paypal Payment</h5>
-	                  	</div>		                  	
-
-	                  	<div class="col-md-4 mt-20">
-	                  		<img class=" img-fluid rounded-circle" src="assets/images/tech/stripe.png" alt="Limmerz Technologies">
-	                  		<h5 class="mt-10">Stripe Payment</h5>
-	                  	</div>
+								<div class="col-md-4 mt-20">
+									<img class=" img-fluid rounded-circle" src="assets/images/tech/bootstrap.png"
+										alt="Limmerz Technologies">
+									<h5 class="mt-10">Bootstrap Version-4</h5>
+								</div>
 
 
-	                  	<div class="col-md-4 mt-20">
-	                  		<img class=" img-fluid rounded-circle" src="assets/images/tech/razor.png" alt="Limmerz Technologies">
-	                  		<h5 class="mt-10">Razor Pay</h5>
-	                  	</div>		                  	
-
-	                  	<div class="col-md-4 mt-20">
-	                  		<img class=" img-fluid rounded-circle" src="assets/images/tech/ssl.jpg" alt="Limmerz Technologies">
-	                  		<h5 class="mt-10">SSL-Commerz Payment</h5>
-	                  	</div>	
-
-	                  	</div>	
+								<div class="col-md-4 mt-20">
+									<img class=" img-fluid rounded-circle" src="assets/images/tech/jquery.png"
+										alt="Limmerz Technologies">
+									<h5 class="mt-10">Jquery </h5>
+								</div>
 
 
-						</section><!--//docs-intro-->
-				    </header>
+								<div class="col-md-4 mt-20">
+									<img class=" img-fluid rounded-circle" src="assets/images/tech/facebook.png"
+										alt="Limmerz Technologies">
+									<h5 class="mt-10">Facebook Api</h5>
+								</div>
 
-			    </article>
-			    
-			    <footer class="footer">
-				    <div class="container text-center py-5">
-				        <small class="copyright"> A Service of  <a href="http://automation.limmexbd.com/" target="_blank">Limmex Automation</a></small>
-			    </footer>
-		    </div> 
-	    </div>
-    </div><!--//docs-wrapper-->
-    
-   
-       
-    <!-- Javascript -->          
-    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
-    <script src="assets/plugins/popper.min.js"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
-    
-    
-    <!-- Page Specific JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
-    <script src="assets/js/highlight-custom.js"></script> 
-    <script src="assets/plugins/jquery.scrollTo.min.js"></script>
-    <script src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script> 
-    <script src="assets/js/docs.js"></script> 
+								<div class="col-md-4 mt-20">
+									<img class=" img-fluid rounded-circle" src="assets/images/tech/google.png"
+										alt="Limmerz Technologies">
+									<h5 class="mt-10">Google Api</h5>
+								</div>
+
+								<div class="col-md-4 mt-20">
+									<img class=" img-fluid rounded-circle" src="assets/images/tech/twitter.png"
+										alt="Limmerz Technologies">
+									<h5 class="mt-10">Twitter Api</h5>
+								</div>
+
+
+								<div class="col-md-4 mt-20">
+									<img class=" img-fluid rounded-circle" src="assets/images/tech/paypal.png"
+										alt="Limmerz Technologies">
+									<h5 class="mt-10">Paypal Payment</h5>
+								</div>
+
+								<div class="col-md-4 mt-20">
+									<img class=" img-fluid rounded-circle" src="assets/images/tech/stripe.png"
+										alt="Limmerz Technologies">
+									<h5 class="mt-10">Stripe Payment</h5>
+								</div>
+
+
+								<div class="col-md-4 mt-20">
+									<img class=" img-fluid rounded-circle" src="assets/images/tech/razor.png"
+										alt="Limmerz Technologies">
+									<h5 class="mt-10">Razor Pay</h5>
+								</div>
+
+								<div class="col-md-4 mt-20">
+									<img class=" img-fluid rounded-circle" src="assets/images/tech/ssl.jpg"
+										alt="Limmerz Technologies">
+									<h5 class="mt-10">SSL-Commerz Payment</h5>
+								</div>
+
+								<div class="col-md-4 mt-20">
+									<img class=" img-fluid rounded-circle" src="assets/images/tech/flutterwave.jpg"
+										alt="Limmerz Technologies">
+									<h5 class="mt-10">FlutterWave Payment</h5>
+								</div>
+
+							</div>
+
+
+						</section>
+						<!--//docs-intro-->
+					</header>
+
+				</article>
+
+				<footer class="footer">
+					<div class="container text-center py-5">
+						<small class="copyright"> A Service of <a href="http://limmexautomation.com/"
+								target="_blank">Limmex Automation</a></small>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<!--//docs-wrapper-->
+
+
+
+	<!-- Javascript -->
+	<script src="assets/plugins/jquery-3.4.1.min.js"></script>
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+	<!-- Page Specific JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+	<script src="assets/js/highlight-custom.js"></script>
+	<script src="assets/plugins/jquery.scrollTo.min.js"></script>
+	<script src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script>
+	<script src="assets/js/docs.js"></script>
 
 </body>
-</html> 
 
+</html>
