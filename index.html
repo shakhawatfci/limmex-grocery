@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Limmerz CMS | Start Your Own Ecommerce Today !</title>
+	<title>Limmerz Grocery | Start Your Own Ecommerce Today !</title>
 
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -27,7 +27,54 @@
 
 	<!-- Theme CSS -->
 	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+	<style>
+		/* The device with borders */
+		.smartphone {
+			position: relative;
+			width: 440px;
+			height: auto;
+			margin: auto;
+			border: 16px black solid;
+			border-top-width: 60px;
+			border-bottom-width: 60px;
+			border-radius: 36px;
+		}
 
+		/* The horizontal line on the top of the device */
+		.smartphone:before {
+			content: '';
+			display: block;
+			width: 60px;
+			height: 5px;
+			position: absolute;
+			top: -30px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: #333;
+			border-radius: 10px;
+		}
+
+		/* The circle on the bottom of the device */
+		.smartphone:after {
+			content: '';
+			display: block;
+			width: 35px;
+			height: 35px;
+			position: absolute;
+			left: 50%;
+			bottom: -65px;
+			transform: translate(-50%, -50%);
+			background: #333;
+			border-radius: 50%;
+		}
+
+		/* The screen (or content) of the device */
+		.smartphone .smart-content {
+			width: 100%;
+			height: 640px;
+			background: white;
+		}
+	</style>
 </head>
 
 <body>
@@ -66,21 +113,41 @@
 	<div class="page-header theme-bg-dark py-5 text-center position-relative">
 		<div class="theme-bg-shapes-right"></div>
 		<div class="theme-bg-shapes-left"></div>
-		<div class="container">
-			<h1 class="page-heading single-col-max mx-auto">Limmerz - Ecommerce CMS (Vue+Laravel)</h1>
-			<div class="page-intro single-col-max mx-auto">Start Your Own Ecommerce Today</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-7" style="align-items: center;align-content: center;">
+					<h1 class="page-heading single-col-max mx-auto">Limmerz - Complete Grocery Ecommerce
+						(Vue+Laravel+PWA)
+					</h1>
+					<div class="page-intro single-col-max mx-auto">Start Your Own Grocery Shop Today</div>
 
-			<div class="page-intro single-col-max mx-auto">
-				<p>Version : 1.3.0</p>
+					<div class="page-intro single-col-max mx-auto">
+						<p>Version : 2.0</p>
+					</div>
+
+					<div class="page-intro single-col-max mx-auto">
+						<p>Created By : <a title="Limmex Automation" target="_blank" class="text-white"
+								href="http://limmexautomation">Limmex Automation</a></p>
+						<h4 class="text-white"><span class="badge badge-warning">New</span> Dynamic Delivery Time Slot
+						</h4>
+
+						<h4 class="text-white"><span class="badge badge-warning">New</span> Coupon System</h4>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-lg-4 col-sm-5 col-xl-3">
+					<div class="smartphone">
+						<div class="smart-content">
+							<!-- <iframe src="http://192.168.0.8/swissgroce/public/"
+								style="width:100%;border:none;height:100%" /> -->
+							<object data="http://192.168.0.8/swissgroce/public/"
+								style="width: 100%; height: 100%;"></object>
+						</div>
+					</div>
+				</div>
+				<!--//col-->
 			</div>
 
-			<div class="page-intro single-col-max mx-auto">
-				<p>Created By : <a title="Limmex Automation" target="_blank" class="text-white"
-						href="http://automation.limmexbd.com">Limmex Automation</a></p>
-				<h4 class="text-white"><span class="badge badge-warning">New</span> Dynamic Delivery Time Slot</h4>
-
-				<h4 class="text-white"><span class="badge badge-warning">New</span> Coupon System</h4>
-			</div>
 		</div>
 	</div>
 	<!--//page-header-->
@@ -215,33 +282,20 @@
 						<!--//card-->
 					</div>
 					<!--//col-->
-
-
-
-					<div class="col-12 col-lg-5 py-3">
-						<div class="card">
+					<div class="col-12 col-lg-4 py-3">
+						<div class="card shadow-sm" style="">
 							<div class="card-body">
 								<h5 class="card-title mb-3">
 									<span class="theme-icon-holder card-icon-holder mr-2">
-										<i class="fas fa-heart"></i>
+										<i class="fas fa-laptop-code"></i>
 									</span>
 									<!--//card-icon-holder-->
-									<span class="card-title-text">Now PWA</span>
+									<span class="card-title-text">Demo Admin Panel</span>
 								</h5>
-
-								<div>
-									<object type="text/html" data="https://lacommerz.limmexbd.com"
-										style="width: 100%;height: 750px;">
-									</object>
+								<div class="card-text">
+									Click this section for amazing admin panel demo
 								</div>
-								<h5 style="text-align: center;">
-									<span class="theme-icon-holder card-icon-holder mr-2 text-center">
-										<!-- <i class="fas fa-heart"></i> -->
-									</span>
-								</h5>
-
-
-
+								<a target="_blank" class="card-link-mask" href="http://limmerz.limmexbd.com/admin"></a>
 							</div>
 							<!--//card-body-->
 						</div>
@@ -263,7 +317,7 @@
 		<div class="container">
 			<h3 class="mb-2 text-white mb-3">Start Your Business Like A Pro</h3>
 			<div class="section-intro text-white mb-3 single-col-max mx-auto">
-				<p>Get Support : 94shakha.18@gmail.com,<br>arifuzzamana.rb@gmail.com,<br>limmexbd@gmail.com</p>
+				<p>Get Support : limmexbd@gmail.com</p>
 			</div>
 			<div class="pt-3 text-center">
 				<a class="btn btn-light"
