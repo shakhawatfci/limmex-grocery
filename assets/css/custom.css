@@ -1,0 +1,17 @@
+.customers img{
+    height: 60px;
+    /* width: 100%; */
+    /* box-shadow: 0px 10px 20px #ccc; */
+    line-height: 80px;
+}
+.client-box{
+
+    box-shadow: 0 5px 15px #f0eded;
+    margin-top: 30px;
+    height: 80px;
+    align-items: center;
+}
+.client-box a{
+
+    display: block;
+}
