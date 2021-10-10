@@ -1,15 +1,15 @@
 
 
 <p align="center">
-<a href="https:lacommerz.limmexbd.com">Limmerz</a><br>
+<a href="https:lacommerz.limmexbd.com">Groco</a><br>
 <a href="https://limmexbd.com">Product Of Limmex Automation</a><br>
-<a href="https://facebook.com/snsabbir.fci">Developer Shakhawat</a>
-<a href="https://github.com/arifuzzaman31">Developer Arifuzzaman</a>
+<a href="https://facebook.com/snsabbir.fci">Lead Dev Shakhawat</a>
+<a href="https://github.com/arifuzzaman31">Dev Arifuzzaman</a>
 
 </p>
 
-## About Limmerz
+## About Groco
 
-Limmerz is Laravel and vue js based ecommerce solution for both grocery and lifestyle.
+Groco is Laravel and vue js based ecommerce solution for both grocery and lifestyle.
 
 Licence under  <a href="https://limmexbd.com">limmex automaion</a> 
